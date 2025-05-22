@@ -1,5 +1,11 @@
 # 카카오맵 크롤링
 
+# 한 번 검색 당 대략 34page, 1page / 약 80s
+# 한 번 검색 당 대략 45.3m
+# 접근성이 좋은 역 위주로 광진구 5개를 검색하면
+# 약 3.8시간
+# 광진구의 약 2,550개의 음식점 데이터
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys

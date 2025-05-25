@@ -32,9 +32,11 @@ try:
     search_box.send_keys(Keys.RETURN)
     time.sleep(3)
 
-    # 장소 더보기 버튼 누르기 
+    # 장소 버튼 클릭 
+    driver.find_element(By.XPATH, '//*[@id="info.main.options"]/li[2]/a').send_keys(Keys.ENTER)
+    '''    # 장소 더보기 버튼 누르기 
     btn = driver.find_element(By.CSS_SELECTOR, '.more')   
-    driver.execute_script("arguments[0].click();", btn)
+    driver.execute_script("arguments[0].click();", btn)'''
 
     '''# 검색 수행
     search_box = driver.find_element(By.ID, 'search.keyword.query')
